@@ -5,8 +5,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.orm import declarative_base
 
-# `Base` é uma classe base declarativa que será usada para definir as tabelas do banco de dados.
-Base = declarative_base()
+from ..schemas.assistant import Base
 
 # método singleton
 class Database:

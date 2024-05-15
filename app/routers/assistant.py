@@ -15,7 +15,6 @@ router = APIRouter(
     tags=["Assistant"]
 )
 
-
 @router.get("/")
 async def get_assistants(db: Session = Depends(get_db)):
     try:
